@@ -1,74 +1,72 @@
-Voice Emotion Analyzer 🎤
+🎤 Voice Emotion Analyzer
 
-A deep learning-based system designed to detect and classify human emotions from speech audio. This project leverages advanced audio signal processing techniques and Convolutional Neural Networks (CNN) to analyze vocal patterns and predict emotions such as happy, sad, angry, and neutral.
+A deep learning-based system for detecting human emotions from speech audio using MFCC features and a CNN model.
 
-🔍 Project Overview
+This project demonstrates the practical application of machine learning and audio signal processing in emotion recognition. It focuses on building an end-to-end pipeline that processes raw audio input, extracts meaningful features, and predicts emotions using a trained deep learning model.
 
-Human speech carries rich emotional information beyond words. This project focuses on extracting and interpreting these emotional cues using machine learning. The system processes raw audio input, converts it into meaningful numerical features (MFCCs), and feeds them into a trained CNN model for accurate emotion classification.
+The system is designed to simulate real-time emotion detection and provides a simple interactive interface, making it a strong foundation for intelligent systems like virtual assistants and human-computer interaction tools.
 
-The application is designed to simulate real-time emotion detection, making it suitable for use cases such as human-computer interaction, mental health analysis, and intelligent virtual assistants.
-✨ Key Features
-Real-time speech emotion prediction
-Efficient audio preprocessing and noise handling
+🚀 Features
+
+Real-time emotion prediction from speech audio
 MFCC (Mel Frequency Cepstral Coefficients) feature extraction
 Deep learning-based classification using CNN
-Interactive and user-friendly frontend interface
-Modular and scalable architecture
+Pre-trained model stored in .h5 format
+Interactive frontend using HTML, CSS, and JavaScript
+Modular pipeline for preprocessing, feature extraction, and prediction
+Easy to extend for real-time microphone input
 
-🛠 Tech Stack
+🛠️ Tech Stack
 
-Programming & Libraries:
 Python
 TensorFlow / Keras
 Librosa
 NumPy
-
-Frontend:
 HTML
 CSS
 JavaScript
 
-⚙️ System Architecture
-The system follows a structured pipeline:
-
-Audio Input – Captures or loads speech audio
-Preprocessing – Noise reduction and normalization
-Feature Extraction – Conversion of audio into MFCC features
-Model Prediction – CNN model processes features and predicts emotion
-Output Display – Predicted emotion shown via frontend interface
-
 📂 Project Structure
-speech_emotion_model.h5 → Pre-trained CNN model
-live_prediction.ipynb → Jupyter notebook for testing and predictions
-final_check.py → Main execution script for running the system
-templates/index.html → Frontend interface
-css/, js/ → Styling and client-side logic
+
+voice-emotion-analyzer
+├── speech_emotion_model.h5
+├── live_prediction.ipynb
+├── final_check.py
+├── templates/index.html
+├── css/
+├── js/
+
+⚙️ Installation & Setup
+
+Clone the repository:
+https://github.com/Mr-Deeptanshu/voice-emotion-analyzer
+
+Navigate to project:
+cd voice-emotion-analyzer
+
+Install dependencies:
+pip install -r requirements.txt
+
+Run the application:
+python final_check.py
+
+Open frontend:
+Open templates/index.html in browser
+
+🌐 Functionality
+
+Upload or provide speech audio input
+System processes audio and extracts MFCC features
+CNN model predicts emotion from processed data
+Predicted emotion is displayed on the interface
 
 📊 Dataset
-The model is trained using the RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song) dataset, which contains professionally recorded emotional speech samples.
 
-Note: The dataset is not included in this repository due to its large size.
+RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)
+Dataset is not included due to large size
 
-🚀 How to Run
-Install all required dependencies
-Run live_prediction.ipynb for testing
-or
-Run final_check.py for full execution
-Launch the frontend interface via index.html
-Provide audio input to get emotion predictions
-
-📈 Results & Performance
-The model demonstrates reliable performance in classifying emotions from speech audio. Accuracy depends on audio quality and noise levels, but preprocessing and feature extraction significantly improve prediction consistency.
-
-🔮 Future Scope
-Integration with real-time microphone input
-Deployment as a web application or API
-Use of advanced architectures (LSTM, Transformer models)
-Multi-language emotion detection
-Integration with chatbot or virtual assistant systems
-
-👤 Author
+👨‍💻 Author
 Deeptanshu Yadav
 
-License
-This project is for educational purpose
+📄 License
+This project is for educational purposes
