@@ -33,11 +33,12 @@ The system is designed to simulate real-time emotion detection and provides a si
 ---
 
 ## 📂 Project Structure
-voice-emotion-analyzer
+voice-emotion-analyzer/
 ├── speech_emotion_model.h5
 ├── live_prediction.ipynb
 ├── final_check.py
-├── templates/index.html
+├── templates/
+│ └── index.html
 ├── css/
 ├── js/
 
